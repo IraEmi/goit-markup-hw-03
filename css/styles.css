@@ -1,0 +1,243 @@
+/* Стилі які приміняються до основної сторінки та портфоліо */
+:root {
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-color: #2196F3;
+    --one-background-color: #FFFFFF;
+    --two-background-color:#2F303A;
+    --tree-background-color: #F5F4FA;
+}
+
+body {
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Стилізація логотипу до основної сторінки та портфоліо*/
+.logo {
+    Font-family: Raleway;
+    Font-weight: 700;
+    Font-size: 26px;
+    Line-height: 1.2;
+    color: var(--accent-color);
+}
+.accent {
+    color: var(--title-text-color);
+}
+ 
+.accent-footer {
+    color: var(--one-background-color);
+}
+
+/* Стилізація header основної сторінки та портфоліо */
+.header {
+    background-color:var(--one-background-color);
+}
+.nav-item {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+}
+
+.current {
+    color:var(--accent-color);
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--accent-color);
+}
+
+.contact-link, .contact-tel {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+}
+.contact-link:hover,
+.contact-link:focus,
+.contact-tel:hover,
+.contact-tel:focus {
+    color: var(--accent-color);
+}
+
+
+/* ---------------СТИЛІЗАЦЯ ОСНОВНОЇ СТОРІНКИ----------*/
+/* Герой */
+.hero {
+    background-color:var(--two-background-color);
+}
+.hero-text {
+    color: var(--one-background-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.136;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.button {
+    background-color: var(--primary-text-color);
+    color: var(--one-background-color);
+    font-weight: 700;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}    
+
+.button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Особености */
+.features-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.features-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/*Чем мы занимаемся*/
+.work-title {
+   color: var(--title-text-color);  
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
+ 
+/* Наша команда */
+.team {
+    background-color: var(--tree-background-color);
+}
+
+.team-title {
+   color: var(--title-text-color);  
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+   letter-spacing: 0.03em 
+}
+ 
+.team-name {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.2;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+   
+}
+/* Стилізація footer до основної сторінки та портфоліо */
+.footer {
+    background-color:var(--two-background-color);
+}
+
+.address {
+    font-style: normal;
+}
+.address-text {
+    color:var(--one-background-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.link, .tel {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.link:hover,
+.link:focus,
+.tel:hover,
+.tel:focus {
+    color: var(--accent-color);
+}
+/*забираю крапки з ненумерованого стиску  */
+.list {
+    list-style: none;
+}
+
+.decoration {
+    text-decoration: none;
+}
+
+
+
+/*--------------СТИЛІЗАЦІЯ ПОРТФОЛІО----------- */
+/* Фильтр страницы */
+.btn-filter {
+    background-color:var(--tree-background-color);
+    color: var(--title-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+.btn-filter:hover,
+.btn-filter:focus {
+    background-color: var(--accent-color);
+    color:var(--one-background-color);
+}
+
+/* Выполненные проекты */
+.projects-list {
+    background-color: var(--one-background-color);
+}
+.projects-item {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+ .projects-text {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+ }
