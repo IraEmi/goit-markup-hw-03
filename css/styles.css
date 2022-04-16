@@ -75,7 +75,7 @@ img {
 .header {
     /* padding-top: 32px; */
     /* padding-bottom: 32px; */
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
     background-color:var(--one-background-color);
 }
 
@@ -172,7 +172,7 @@ img {
     height: 50px;
     border-radius: 4px;
     border: 1px solid transparent;
-    background-color: var(--primary-text-color);
+    background-color: var(--accent-color);
     color: var(--one-background-color);
     font-weight: 700;
     font-size: 16px;
@@ -181,10 +181,6 @@ img {
     letter-spacing: 0.06em;
     cursor: pointer;
 }    
-
-.button:hover {
-    background-color: var(--accent-color);
-}
 
 /* Особености */
 .features-list {
@@ -352,9 +348,16 @@ img {
     margin-bottom: 50px;
 }
 
+.btn-list {
+    margin-right: 8px;
+}
+
+.filter-list li:last-child {
+    margin-right: 0;
+}
+
 .btn-filter {
     padding: 6px 22px;
-    margin-right: 8px;
     background-color:var(--tree-background-color);
     color: var(--title-text-color);
     font-family: inherit;
@@ -379,12 +382,14 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
+    margin-bottom: -30px;
 } 
 
 .projects-list {
     background-color: var(--one-background-color);
     flex-basis: calc(100% / 3 - 30px);
     margin-right: 30px;
+    margin-bottom: 30px;
     border: 1px solid #EEEEEE;
 }
 
